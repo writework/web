@@ -14,4 +14,13 @@ $(document).ready(function() {
       }
     );
 
+  var scroll = $("aside nav.service_content");
+   $(window).scroll(function(){
+  if ($(window).scrollTop()>=300) {
+       scroll.addClass('fix');
+  }
+  else scroll.removeClass('fix');
+ });
+
+
 });

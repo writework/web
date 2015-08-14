@@ -36,8 +36,8 @@ header nav li a{
     color: #007bbf;
     text-align: center;
     text-decoration: none;
-    border-bottom: 1px solid  #007bbf;
     transition: all .5s ease-in-out;
+    border-bottom: 1px solid  #007bbf;
 }
 .logo_a {
     border: none;
@@ -417,11 +417,10 @@ header a.click {
     background-repeat: no-repeat;
     background-position: center top;
     padding-top: 81px;
+    transition: all .3s ease-in-out;
 
 }
-.three .right a img {;
 
-}
 .three .right img.small {
     margin-left: 41px;
 
@@ -484,8 +483,9 @@ body.about {
     color: #007bbf;
     text-transform: uppercase;
     height: 51px;
-    padding-top: 7px;
     display: block;
+    transition: all .3s ease-in-out;
+    padding-top: 7px;
 }
 .four ul li a:active {
     color:#000;
@@ -493,6 +493,12 @@ body.about {
     background-repeat: no-repeat;
     background-position-x: center;
     text-decoration: none;
+    height: 51px;
+}
+.four ul li a:hover {
+    color: #00C0FF;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
 }
 .four .all {
 }
@@ -505,9 +511,20 @@ body.about {
     margin-right: 20px;
     margin-left: 20px;
 }
+.four .all article:hover h2 {
+    color: #00C0FF;
+    transition: all .5s ease-in-out;
+}
+.four .all article:hover img {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    transition: all .1s ease-in-out;
+}
 .four .all article img{
+    transition: all .1s ease-in-out;
 }
 .four .all article h2{
+        transition: all .5s ease-in-out;
     text-transform: none;
     font-size: 22px;
     color: #3c3c3c;
@@ -667,8 +684,16 @@ body.about {
     font-family: sreda;
     cursor: pointer;
     background-repeat: no-repeat;
+       transition: all .5s ease-in-out;
 
+}.rewiews_btn:hover {
+    background-image: url(/images/back_rew_hov.png);
+    transition: all .5s ease-in-out;
 }
+.telephone  a {
+    text-decoration: none;
+}
+
 footer {
      background-repeat: no-repeat;
      background-position: top center;
@@ -756,10 +781,34 @@ header.service {
     background-position: center 233%;
     padding-bottom: 89px;
 }
-nav.service li a {
-    color: #fff;
+header nav.service  li {
+    margin-left: 0px;
+    margin-right: 0px;
 
 }
+nav.service li a {
+    color: #fff;
+    transition: all .5s ease-in-out;
+    padding: 19px 20px 37px 20px;
+    border: none;
+    text-decoration: underline;
+}
+
+nav.service li a:hover {
+    color: #76FAFF;
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+}
+nav.service li a.pad:active {
+   padding: 19px 20px 42px 20px;
+     background-color: #4ABCFC;
+      color: #000;
+}
+nav.service li a:active {
+    padding: 19px 20px 37px 20px;
+    background-color: #4ABCFC;
+    color: #000;
+   }
 nav.service {
 
 }
@@ -768,7 +817,7 @@ header.service nav li a img {
 
 }
 header.service nav {
-    margin: -83px 10%;
+    margin: -82px 10%;
     width: 80%;
 
 }
@@ -794,8 +843,11 @@ aside nav.service_content {
     margin-top: 32px;
     margin-left: 88px;
     padding-top: 29px;
-    position: fixed;
 
+}
+aside nav.service_content.fix {
+    position: fixed;
+    top: 20px;
 }
 .service_content aside nav.service_content ul li {
     display: list-item;
@@ -846,10 +898,12 @@ aside nav.service_content li a {
     display: block;
     padding-bottom: 9px;
     text-align: center;
+    transition: all .3s ease-in-out;
 }
 .service_content ul li a:hover {
     color:#4ABCFC;
     text-decoration: none;
+    transition: all .3s ease-in-out;
 }
 .service_content ul li a:active {
     color:#000;
@@ -902,6 +956,15 @@ aside nav.service_content li a {
 }
 .service_content .all article p span{
     font-weight: 600;
+}
+.service_content .all article:hover img {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    transition: all .1s ease-in-out;
+}
+.service_content .all article:hover h2 {
+    color: #00C0FF;
+    transition: all .5s ease-in-out;
 }
 .service_content  .h2 {
     display: table;
@@ -1445,6 +1508,10 @@ aside nav.service_content li a {
     margin-right: 20px;
     margin-left: 20px;
 }
+.prod_bl .all article:hover h2 {
+    color: #00C0FF;
+    transition: all .5s ease-in-out;
+}
 .prod_bl .all article img{
 }
 .prod_bl .all article h2{
@@ -1457,6 +1524,7 @@ aside nav.service_content li a {
     display: table-cell;
     vertical-align: top;
     padding-bottom: 20px;
+     transition: all .5s ease-in-out;
 }
 .prod_bl  article h2:before {
      font-size: 22px;
@@ -1524,7 +1592,9 @@ aside nav.service_content li a {
 .full_text b {
 
 }
-.full_text a.a {
+.full_text a.ligth_blue {
+    color: #007bbf;
+    transition: all .3s ease-in-out;
 
 }
 .h2_full {
@@ -1759,7 +1829,6 @@ section.conacts .right textarea {
 .address_img {
     margin-left: 40px;
     margin-top: 36px;
-    vertical-align: middl;;;
 
 }
 .mail_img {
@@ -1782,8 +1851,25 @@ section.conacts .right textarea {
     vertical-align: top;
 }
 .three .right a.hov_img_effect {
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     background-image: url(/images/diplom_icon_hov.png);
     color:#4ABCFC;
     text-decoration: none;
    }
+.mailto {
+    color: #007BBF;
+     transition: all .3s ease-in-out;
+}
+.mailto:hover {
+    color: #4ABCFC;
+     transition: all .3s ease-in-out;
+}
+.full_text a.ligth_blue:hover {
+    color: #00C0FF;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+   }
+
+
+
+
