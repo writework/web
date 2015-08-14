@@ -10,19 +10,19 @@
   font-style: normal;
 }
 .container {
-	width:1280px;
-	clear:both;
-	margin:0 auto;
+    width:1280px;
+    clear:both;
+    margin:0 auto;
 }
 header {
-	background-color:#fff;
+    background-color:#fff;
 
-	background-repeat: no-repeat;;
-	background-image:url(/images/back_1.png);;
+    background-repeat: no-repeat;;
+    background-image:url(/images/back_1.png);;
 
-	padding-bottom: 138px;
-	background-position-x: 51%;
-	background-position-y: 101%;;
+    padding-bottom: 138px;
+    background-position-x: 51%;
+    background-position-y: 101%;;
 }
 header nav {
     margin: 2px 10%;
@@ -35,18 +35,18 @@ header nav li a{
     font-size: 18px;
     color: #007bbf;
     text-align: center;
-	
+    
 }
 header nav li a img {
     margin-top: 25px;
-	
+    
 }
 header nav li {
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
     margin-left: 20px;
-	
+    
 }
 header a.phone{
     background-image: url(/images/phone.png);
@@ -55,7 +55,7 @@ header a.phone{
     float: right;
     margin-top: -144px;
     margin-right: 50px;
-	
+    
 }
 header article {
     width: 50%;
@@ -70,7 +70,7 @@ header article h1{
     text-align: center;
     color: #007bbf;
     margin-bottom: 28px;
-	
+    
 }
 header article .left_border{
     display: inline-block;
@@ -78,7 +78,7 @@ header article .left_border{
     border-top: 2px solid #007bbf;
     margin-left: 79px;
     vertical-align: middle;
-	
+    
 }
 header article .right_border{
     display: inline-block;
@@ -86,7 +86,7 @@ header article .right_border{
     border-top: 2px solid #007bbf;
     margin-left: -4px;
     vertical-align: middle;
-	
+    
 }
 header article h2 {
     font-size: 20px;
@@ -106,7 +106,7 @@ header article p {
     width: 601px;
     margin: 26px auto;
     line-height: 1.2;
-	
+    
 }
 header a.click {
     margin: 0 auto;
@@ -162,7 +162,7 @@ header a.click {
 
     width: 77px;
     border-top: 2px solid #007bbf;
-	margin: 25px auto;
+    margin: 25px auto;
 }
 .one .left figure{
 
@@ -192,20 +192,20 @@ header a.click {
 
 }
 .one .center img{
-	
+    
 }
 .one .right {
     display: inline-block;
     width: 310px;
     margin-left: -77px;
     margin-top: 40px;
-	
+    
 }
 .one .right h2{
     font-size: 30px;
     font-family: sreda;
     color: #202020;
-	
+    
 }
 .one .right p{
     color: #5b5b5b;
@@ -213,12 +213,12 @@ header a.click {
     font-family: 'myriadpro';
     line-height: 1.3;
     margin-top: 31px;
-	
+    
 }
 .one .right img{
     margin-top: 199px;
     margin-left: -29px;
-	
+    
 }
 .two {
     background-image: url(/images/back_2.png);
@@ -241,7 +241,7 @@ header a.click {
 .two article img{
     margin: 0 auto;
     vertical-align: top;
-	
+    
 }
 .two article h2{
     font-family: sreda;
@@ -251,7 +251,7 @@ header a.click {
     display: table-cell;
 
     vertical-align:middle;
-	
+    
 }
 .two article p{
     font-size: 15px;
@@ -260,7 +260,7 @@ header a.click {
     line-height: 1.3;
     width: 241px;
     margin: 0 auto;
-	
+    
 }
 .middle {
     display: table;
@@ -270,12 +270,12 @@ header a.click {
 
 }
 .two .back {
-	background: url(/images/bord_back_2.png);
-	width: 100%;
-	background-position: center center;
-	margin-top: 105px;
-	height: 200px;
-	background-repeat: no-repeat;
+    background: url(/images/bord_back_2.png);
+    width: 100%;
+    background-position: center center;
+    margin-top: 105px;
+    height: 200px;
+    background-repeat: no-repeat;
 }
 .two .container {
     margin-top: -185px;
@@ -302,17 +302,17 @@ header a.click {
     font-size: 40px;
 }
 .three .left h2:before {
-	content: '~';
-	float: left;
-	font-size: 46px;
+    content: '~';
+    float: left;
+    font-size: 46px;
 }
 .three .left h2:after {
-	content: '~';
-	float: right;
-	font-size: 46px;
+    content: '~';
+    float: right;
+    font-size: 46px;
 }
 .three .left .border {
-	    width: 164px;
+        width: 164px;
     margin: 20px auto;
     border-top: 4px solid #007bbf;
 }
@@ -402,17 +402,17 @@ header a.click {
 
 }
 .four h2.about {
-	text-transform: none;
-	margin-top: 20px;
-	font-family: sreda;
+    text-transform: none;
+    margin-top: 20px;
+    font-family: sreda;
 }
 .four  h2:before {
-	content: '~';
-	font-size: 46px;
+    content: '~';
+    font-size: 46px;
 }
 .four  h2:after {
-	content: '~';
-	font-size: 46px;
+    content: '~';
+    font-size: 46px;
 }
 
 .four p input {
@@ -431,7 +431,7 @@ header a.click {
 
 }
 body.about {
-	background-image: url(/images/back_about.png);
+    background-image: url(/images/back_about.png);
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -450,11 +450,11 @@ body.about {
     display: block;
 }
 .four ul li a:active {
-	color:#000;
-	background: url(/images/flag.png);
-	background-repeat: no-repeat;
-	background-position-x: center;
-	text-decoration: none;
+    color:#000;
+    background: url(/images/flag.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    text-decoration: none;
 }
 .four .all {
 }
@@ -481,19 +481,19 @@ body.about {
     padding-bottom: 20px;
 }
 .four  article h2:before {
-	 font-size: 22px;
-	  content: '';
+     font-size: 22px;
+      content: '';
 }
 .four   article h2:after {
-	 font-size: 22px;
-	 content: '';
+     font-size: 22px;
+     content: '';
 }
 .four .all article p{
     font-size: 16px;
     font-family: 'myriadpro';
     color: #3c3c3c;
     line-height: 1.3;;
-	
+    
 }
 .four .all article p span{
     font-weight: 600;
@@ -504,7 +504,7 @@ body.about {
     margin-top: 20px;
 }
 .four  .p {
-	display: table-footer-group;
+    display: table-footer-group;
 }
 .four  .img {
     height: 249px;
@@ -534,20 +534,19 @@ body.about {
     margin: 0 auto;
 }
 .five h2:before {
-	 font-size: 40px;
-	  content: '~';
-	  float: left;
+     font-size: 40px;
+      content: '~';
+      float: left;
 }
 .five  h2:after {
-	 font-size: 40px;
-	 content: '~';
-	 float: right;
+     font-size: 40px;
+     content: '~';
+     float: right;
 }
 .rewiews_all {
 
 }
 .prev {
-    float: left;
     font-size: 45px;
     display: block;
     height: 44px;
@@ -560,6 +559,7 @@ body.about {
     text-align: center;
     margin-top: 129px;
     margin-left: 49px;
+    float: left;
 
 }
 .rewiews {
@@ -622,23 +622,23 @@ body.about {
     width: 218px;
     height: 62px;
     background-image: url(/images/btn_rew.png);
-    background-repeat: no-repeat;
     background-color: rgba(0, 123, 191, 0);
     border: none;
     color: #fff;
     font-size: 18px;
     font-family: sreda;
     cursor: pointer;
+    background-repeat: no-repeat;
 
 }
 footer {
-	 background-repeat: no-repeat;
-	 background-position: top center;
-	 height: 162px;
-	 width: 100%;
-	 padding-top: 57px;
-	 background-image: url(/images/back_footer.png);
-	 overflow: hidden;
+     background-repeat: no-repeat;
+     background-position: top center;
+     height: 162px;
+     width: 100%;
+     padding-top: 57px;
+     background-image: url(/images/back_footer.png);
+     overflow: hidden;
 
 
 }
@@ -656,16 +656,16 @@ footer article p {
 
 }
 footer article p:nth-child(3){
-	margin-top: 23px;
-	font-size: 15px;
+    margin-top: 23px;
+    font-size: 15px;
 }
 footer div.telephone {
-	display: inline-block;
-	vertical-align: top;
-	color: #575757;
-	font-family: "myriadpro";
-	font-size: 17px;
-	margin-left: 47px;
+    display: inline-block;
+    vertical-align: top;
+    color: #575757;
+    font-family: "myriadpro";
+    font-size: 17px;
+    margin-left: 47px;
 }
 footer div.telephone span:nth-child(4) {
 
@@ -690,20 +690,20 @@ footer div.telephone span:nth-child(3) {
 
 }
 footer div.adress {
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 73px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 73px;
 }
 footer div.adress img {
 
 }
 footer div.adress p {
-	width: 167px;
-	display: inline-block;
-	font-size: 17px;
-	color: #454545;
-	margin-top: 13px;
-	margin-left: 13px;
+    width: 167px;
+    display: inline-block;
+    font-size: 17px;
+    color: #454545;
+    margin-top: 13px;
+    margin-left: 13px;
 }
 .logo_foot {
     margin-left: 49px;
@@ -713,10 +713,10 @@ footer div.adress p {
 
 }
 header.service {
-	background: url(/images/back_head_service.png);
-	background-repeat: no-repeat;
-	background-position: center 233%;
-	padding-bottom: 89px;
+    background: url(/images/back_head_service.png);
+    background-repeat: no-repeat;
+    background-position: center 233%;
+    padding-bottom: 89px;
 }
 nav.service li a {
     color: #fff;
@@ -741,7 +741,7 @@ header.service a.phone{
     float: right;
     margin-top: -74px;
     margin-right: 50px;
-	
+    
 }
 aside {
     float: left;
@@ -761,10 +761,10 @@ aside nav.service_content {
 }
 .service_content aside nav.service_content ul li {
     display: list-item;
-	
+    
 }
 aside nav.service_content li a {
-	
+    
 }
 .service_content {
     margin-top: -40px;
@@ -783,12 +783,12 @@ aside nav.service_content li a {
 
 }
 .service_content  h2:before {
-	content: '~';
-	font-size: 46px;
+    content: '~';
+    font-size: 46px;
 }
 .service_content  h2:after {
-	content: '~';
-	font-size: 46px;
+    content: '~';
+    font-size: 46px;
 }
 .service_content ul {
     width: 954px;
@@ -810,13 +810,13 @@ aside nav.service_content li a {
     text-align: center;
 }
 .service_content ul li a:hover {
-	color:#4ABCFC;
-	text-decoration: none;
+    color:#4ABCFC;
+    text-decoration: none;
 }
 .service_content ul li a:active {
-	color:#000;
-	background-color: rgba(33, 156, 220, 0.28);
-	text-decoration: none;
+    color:#000;
+    background-color: rgba(33, 156, 220, 0.28);
+    text-decoration: none;
 }
 .service_content .all {
     float: right;
@@ -848,19 +848,19 @@ aside nav.service_content li a {
     padding-bottom: 20px;
 }
 .service_content  article h2:before {
-	 font-size: 22px;
-	  content: '';
+     font-size: 22px;
+      content: '';
 }
 .service_content   article h2:after {
-	 font-size: 22px;
-	 content: '';
+     font-size: 22px;
+     content: '';
 }
 .service_content .all article p{
     font-size: 16px;
     font-family: 'myriadpro';
     color: #3c3c3c;
     line-height: 1.3;;
-	
+    
 }
 .service_content .all article p span{
     font-weight: 600;
@@ -872,7 +872,7 @@ aside nav.service_content li a {
     text-transform: u;
 }
 .service_content  .p {
-	display: table-footer-group;
+    display: table-footer-group;
 }
 .service_content  .img {
     height: 254px;
@@ -896,7 +896,7 @@ aside nav.service_content li a {
 .four.about article .left img {
     margin-top: 59px;
     margin-left: 86px;
-	
+    
 }
 .four.about article .right {
     display: inline-block;
@@ -927,7 +927,7 @@ aside nav.service_content li a {
 }
 .four.about {
     padding-bottom: 33px;
-	
+    
 }
 .gallery_about .gallery  {
 
@@ -935,22 +935,22 @@ aside nav.service_content li a {
 .gallery_about .gallery div{
     width: 300px;
     display: inline-block;
-	transition: all .2s ease-in-out;
-	vertical-align: middle;
-	padding:15px;
-	padding-left:0;
-	padding-right:0;
+    transition: all .2s ease-in-out;
+    vertical-align: middle;
+    padding:15px;
+    padding-left:0;
+    padding-right:0;
 }
 
 .gallery_about .gallery  div :hover  {
-	width: 330px;
-	transition: all .2s ease-in-out;
+    width: 330px;
+    transition: all .2s ease-in-out;
 }
 .gallery_about .gallery div :hover {
-	 padding: 0px;
-	
-	position: relative;
-	
+     padding: 0px;
+    
+    position: relative;
+    
 }
 .gallery_about .gallery {
 
@@ -984,9 +984,9 @@ aside nav.service_content li a {
 
 }
 .four.about_bottom {
-	background: url(/images/back_about_2.png);
-	background-repeat: no-repeat;
-	background-position: 78.5% 20%;
+    background: url(/images/back_about_2.png);
+    background-repeat: no-repeat;
+    background-position: 78.5% 20%;
 }
 .about_bottom .right{
     display: inline-block;
@@ -1044,10 +1044,10 @@ aside nav.service_content li a {
     margin-left: 250px;
     line-height: 1.2;
     text-align: left;
-	
+    
 }
 .border_about {
-	width: 141px;
+    width: 141px;
     margin: 5px auto;
     border: 2px solid #007bbf;
 }
@@ -1073,7 +1073,7 @@ aside nav.service_content li a {
     font-family: 'myriadpro';
     padding: 0 10px 0 10px;
     margin-bottom: 33px;;
-	
+    
 }
 .news h2 a{
     font-family: sreda;
@@ -1117,29 +1117,29 @@ aside nav.service_content li a {
 }
 .pagination li a.last {
     border: none;
-	 width: 107px;
-	 font-size: 21px;
-	 font-family: 'myriadpro';
-	 color: #007bbf;
-	 text-align: left;
-	 margin-left: 14px;
+     width: 107px;
+     font-size: 21px;
+     font-family: 'myriadpro';
+     color: #007bbf;
+     text-align: left;
+     margin-left: 14px;
 }
 .pagination li a.last:after {
-	content: "\2192";
-	font-size: 33px;
-	vertical-align: middle;
-	margin-left: 7px;
+    content: "\2192";
+    font-size: 33px;
+    vertical-align: middle;
+    margin-left: 7px;
 }
 .pagination li a.first:before {
-	content: "\2190";
-	font-size: 33px;
-	vertical-align: middle;
-	margin-right: 7px;
+    content: "\2190";
+    font-size: 33px;
+    vertical-align: middle;
+    margin-right: 7px;
 }
 .pagination li {
     display: inline-block;
     margin-right: 5px;
-	
+    
 }
 .pagination li a {
     font-size: 25px;
@@ -1166,12 +1166,12 @@ aside nav.service_content li a {
 
 }
 .four h2.about.rew {
-	font-size:44px;
-	color:#fff;
+    font-size:44px;
+    color:#fff;
 
 }
 .four ul.rew li a:active {
-	color:#fff;
+    color:#fff;
 }
 .rewiews_list .border {
     width: 141px;
@@ -1228,10 +1228,10 @@ aside nav.service_content li a {
 
 }
 .pagination .rew ul li a {
-	color:#fff;
+    color:#fff;
 }
 .rewiews_btn.rew_btn {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 .prod {
 
@@ -1281,23 +1281,23 @@ aside nav.service_content li a {
     font-size: 17px;
     font-weight: 600;
     width: 73px;
-	
+    
 }
 .prod article .param p.blue{
     color: #007BBF;
     font-size: 25px;
-	
+    
 }
 .prod .param_bl {
-	background: url(/images/back_tovar.png);
-	display: inline-block;
-	width: 210px;
-	vertical-align: top;
-	height: 384px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	margin-top: 110px;
-	padding-left: 84px;;
+    background: url(/images/back_tovar.png);
+    display: inline-block;
+    width: 210px;
+    vertical-align: top;
+    height: 384px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 110px;
+    padding-left: 84px;;
 }
 .prod .param_bl .for_h4{
     color: #343434;
@@ -1306,7 +1306,7 @@ aside nav.service_content li a {
     font-weight: 600;
     margin-top: 3px;
     letter-spacing: 1px;;
-	
+    
 }
 .prod .param_bl h4{
     color: #007BBF;
@@ -1315,7 +1315,7 @@ aside nav.service_content li a {
     font-weight: 600;
     margin-top: 81px;
 
-	
+    
 }
 .prod .param_bl .for_h5{
     color: #343434;
@@ -1324,7 +1324,7 @@ aside nav.service_content li a {
     line-height: normal;
     width: 181px;
 
-	
+    
 }
 .prod .param_bl h5{
     color: #007BBF;
@@ -1333,7 +1333,7 @@ aside nav.service_content li a {
     font-weight: 600;
     margin-top: 34px;
 
-	
+    
 }
 .prod article .param_last {
     margin-top: 10px;
@@ -1347,7 +1347,7 @@ aside nav.service_content li a {
 .prod article .param_last p.blue{
     color: #007BBF;
     font-size: 25px;
-	
+    
 }
 .prod .border {
     width: 144px;
@@ -1385,12 +1385,12 @@ aside nav.service_content li a {
 
 }
 .prod_bl  h2:before {
-	content: '~';
-	font-size: 46px;
+    content: '~';
+    font-size: 46px;
 }
 .prod_bl  h2:after {
-	content: '~';
-	font-size: 46px;
+    content: '~';
+    font-size: 46px;
 }
 .prod_bl p {
     text-align: center;
@@ -1421,19 +1421,19 @@ aside nav.service_content li a {
     padding-bottom: 20px;
 }
 .prod_bl  article h2:before {
-	 font-size: 22px;
-	  content: '';
+     font-size: 22px;
+      content: '';
 }
 .prod_bl   article h2:after {
-	 font-size: 22px;
-	 content: '';
+     font-size: 22px;
+     content: '';
 }
 .prod_bl .all article p{
     font-size: 16px;
     font-family: 'myriadpro';
     color: #FFFFFF;
     line-height: 1.3;;
-	
+    
 }
 .prod_bl .all article p span{
     font-weight: 600;
@@ -1444,7 +1444,7 @@ aside nav.service_content li a {
     margin-top: 20px;
 }
 .prod_bl  .p {
-	display: table-footer-group;
+    display: table-footer-group;
 }
 .prod_bl  .img {
     height: 249px;
@@ -1467,8 +1467,8 @@ aside nav.service_content li a {
     margin-right: auto;
 }
 .service_content.page h2:after,.service_content.page h2:before {
-	content: '';
-	font-size: 40px;
+    content: '';
+    font-size: 40px;
 }
 .page .border {
     width: 144px;
@@ -1530,7 +1530,7 @@ aside nav.service_content li a {
     font-weight: bold;
 }
 .number_list li span {
-	  color: #343434;
+      color: #343434;
     font-size: 16px;
     font-weight: 400;
 }
@@ -1556,11 +1556,186 @@ aside nav.service_content li a {
 
 }
 .img_left {
-	float: left;
-	margin-top: 21px;
-	margin-right: 31px;
-	margin-bottom: 22px;
+    float: left;
+    margin-top: 21px;
+    margin-right: 31px;
+    margin-bottom: 22px;
 }
 .full_article {
-	margin-bottom: 94px;
+    margin-bottom: 94px;
+}
+.diploms {
+    margin-top: -33px;
+    padding-bottom: 212px;
+
+}
+.diploms img:last-child {
+    margin-right: 0;;
+
+
+}
+.diploms img {
+    margin-right: 50px;
+    
+
+}
+body.diploms_body {
+    background-image: url(/images/back_diplom.png);
+    background-repeat: no-repeat;
+    background-position: center 29%;
+
+}
+.content_slider {
+    width: 1040px;
+    margin: 0 auto;
+
+}
+.diploms .prev {
+    margin-left: 35px;
+    margin-top: 188px;
+
+}
+.diploms .next {
+
+}
+.diploms .next img,.diploms .prev img {
+    margin: 0;
+}
+section.conacts {
+    margin-bottom: -82px;
+    position: relative;
+    z-index: 1;
+
+}
+section.conacts .left {
+    background-image: url(/images/back_address.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 401px;
+    width: 481px;
+    background-position-x: 100%;
+    margin-left: 72px;
+
+}
+section.conacts .left h2{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: sreda;
+    margin-top: 67px;
+    margin-bottom: 30px;
+    
+}
+section.conacts .left p{
+    font-family: sreda;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: -16px;
+    
+}
+section.conacts .left p span {
+    color: #b2d3e5;
+    font-family: sreda;
+    font-size: 24px;
+}
+
+section.conacts .left p.address{
+    font-family: 'myriadPro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: -22.5;
+    width: 356px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    
+}
+section.conacts .left a.mail{
+    color: #33f3ff;
+    font-size: 18px;
+    font-family: 'myriadpro';
+    width: 223px;
+    margin: 20px auto;
+    display: block;
+    
+}
+section.conacts .right{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 77px;
+    width: 645px;
+    
+}
+section.conacts .right h2{
+    font-family: sreda;
+    font-size: 24px;
+    margin-top: 13px;
+    color: #1b1b1b;
+    
+}
+section.conacts .right p{
+    font-size: 15px;
+    color: #343434;
+    font-family: myriadpro;
+    margin-top: 20px;
+    width: 405px;
+    line-height: normal;
+    
+}
+section.conacts .right p.inputs{
+    width: 100%;
+    
+}
+section.conacts .right input{
+    height: 43px;
+    width: 261px;
+    margin-right: 15px;
+    border-left: 3px #007BBF solid;
+    border: none;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: myriadpro;
+    background-color: #EEF3F5;
+    color: #464646;
+}
+section.conacts .right textarea {
+    height: 65px;
+    width: 557px;
+    margin-top: 10px;
+    border: none;
+    padding-left: 15px;
+    font-size: 15px;
+    border-left: 3px #007BBF solid;
+    font-family: myriadpro;
+    color: #464646;
+    background-color: #EEF3F5;
+    padding-top: 15px;;
+    
+}
+.four.about h2.about.cont {
+    text-transform: uppercase;
+    margin-top: 38px;
+
+}
+.address_img {
+    margin-left: 40px;
+    margin-top: 36px;
+    vertical-align: middl;;;
+
+}
+.mail_img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.conacts .rewiews_btn {
+    margin-top: 10px;;
+    font-family: sreda;
+    font-size: 12px;
+    padding-bottom: 0px;
+    margin-left: 0;
+    background-image: url(/images/btn_con.png);
+    width: 107px;
+    height: 40px;
+    
 }
