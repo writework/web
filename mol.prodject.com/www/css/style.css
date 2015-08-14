@@ -35,7 +35,17 @@ header nav li a{
     font-size: 18px;
     color: #007bbf;
     text-align: center;
-    
+    text-decoration: none;
+    border-bottom: 1px solid  #007bbf;
+    transition: all .5s ease-in-out;
+}
+.logo_a {
+    border: none;
+}
+header nav li a.hov_a:hover {
+    color: #00C0FF;
+    border-bottom: 1px solid  rgba(0, 123, 191, 0);
+    transition: all .3s ease-in-out;
 }
 header nav li a img {
     margin-top: 25px;
@@ -49,13 +59,38 @@ header nav li {
     
 }
 header a.phone{
-    background-image: url(/images/phone.png);
     height: 60px;
     width: 60px;
     float: right;
     margin-top: -144px;
     margin-right: 50px;
-    
+    display: block;
+    background-image: url(/images/phone.png); 
+}
+header a.trans_phone {
+    height: 42px;
+    width: 290px;
+    margin-right: 50px;
+    font-size: 24px;
+    font-family: sreda;
+    background-image: url(/images/trans_phone.png);
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-top: 19px;
+    background-repeat: no-repeat;
+    margin-top: -144px;
+}
+header a.trans_phone_180 {
+    transform: rotateY(90deg);
+}
+.transform_phone {
+    transform: rotateY(90deg);
+}
+header a.phone:hover {
+
 }
 header article {
     width: 50%;
@@ -237,11 +272,18 @@ header a.click {
     vertical-align: top;
     margin-right: -7px;
 
+
+}
+.two article:hover img{
+    margin-bottom: 10px;
+    margin-top: -10px;
+    transition: all .3s ease-in-out;
 }
 .two article img{
     margin: 0 auto;
     vertical-align: top;
-    
+    margin-bottom: 0;
+    transition: all .1s ease-in-out;
 }
 .two article h2{
     font-family: sreda;
@@ -382,10 +424,6 @@ header a.click {
 }
 .three .right img.small {
     margin-left: 41px;
-
-}
-.three .right img.big {
-    vertical-align: top;
 
 }
 .four {
@@ -1737,5 +1775,15 @@ section.conacts .right textarea {
     background-image: url(/images/btn_con.png);
     width: 107px;
     height: 40px;
-    
+
 }
+
+.three .right img.big {
+    vertical-align: top;
+}
+.three .right a.hov_img_effect {
+    transition: all .5s ease-in-out;
+    background-image: url(/images/diplom_icon_hov.png);
+    color:#4ABCFC;
+    text-decoration: none;
+   }
