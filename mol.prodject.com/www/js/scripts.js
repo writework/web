@@ -13,7 +13,6 @@ $(document).ready(function() {
                 $(".three .right a").removeClass("hov_img_effect");
       }
     );
-
   var scroll = $("aside nav.service_content");
    $(window).scroll(function(){
   if ($(window).scrollTop()>=300) {

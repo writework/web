@@ -9,6 +9,13 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="/js/scripts.js"></script>
+  <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
+</script>
 </head>
 <body>
   <header>
@@ -240,7 +247,8 @@
       <h2>Отзывы о продукции</h2>
       <div class="rewiews_all">
         <a href="" class="prev">
-        <img src="images/prev.png" alt=""></a>
+          
+           </a>
         <div class="rewiews">
           <div class="name">
             Иванова Александра, 25 января 2015 г.
@@ -254,10 +262,29 @@
           всегда свежее...</p>
         </div>
         <a href="" class="next">
-          <img src="images/next.png" alt="">
         </a>
       </div>
-      <button class="rewiews_btn">Оставить отзыв</button>
+      <a href="#popup"class="rewiews_btn_a fancybox" >Оставить отзыв</a>
+      <div class="modal" id="popup">
+          <form action="" method="POST">
+            <h2>Есть пожелания?</h2>
+            <p>Отправьте письмо с вашими пожеланиями. Мы обязательно
+            ознакомимся с ними!</p>
+            <p class="inputs">
+              <input type="text"
+                     placeholder="Имя">
+              <input type="text"
+                     placeholder="E-mail">
+            </p>
+            <textarea name=""
+                      id="" 
+                      cols="30"
+                      rows="10"
+                      placeholder="Комментарий"></textarea>
+                      <button class="rewiews_btn">Отправить</button>
+
+          </form>
+        </div>
     </div>
   </section>
   <footer>
