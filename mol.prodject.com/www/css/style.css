@@ -420,7 +420,6 @@ header a.click {
 }
 
 .three .right img.small {
-    margin-left: 41px;
 
 }
 .four {
@@ -629,7 +628,22 @@ body.about {
     padding-bottom: 40px;
     padding-top: 35px;
     width: 897px;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
+    position: relative;
 }
+.rewiews:after{
+    background: url(/images/trenagle.png);
+    content: "";
+    left: 50%;
+    height: 25px;
+    width: 40px;
+    background-repeat: no-repeat;
+    bottom: -19px;
+    position: absolute;
+}
+.rewiews
 .name {
     text-align: center;
     color: #0a0a0a;
@@ -1153,7 +1167,6 @@ aside nav.service_content li a {
 
 }
 .about_bottom .right img.small {
-    margin-left: 41px;
 
 }
 .about_bottom .right img.big {
@@ -1358,11 +1371,11 @@ aside nav.service_content li a {
     margin-bottom: 0;;
 }
 .rewiews_list .rewiews {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 36px;
+    margin-bottom: 59px;
 
 }
-.pagination .rew ul li a {
+.pagination.rew ul li a {
     color:#fff;
 }
 .rewiews_btn.rew_btn {
@@ -1395,8 +1408,6 @@ aside nav.service_content li a {
     color: #1b1b1b;
     text-transform: none;
     margin-bottom: 8px;
-    width: 390px;
-    line-height: 40px;
 
 }
 .prod article p {
@@ -1426,7 +1437,6 @@ aside nav.service_content li a {
     
 }
 .prod .param_bl {
-    background: url(/images/back_tovar.png);
     display: inline-block;
     width: 210px;
     vertical-align: top;
@@ -1434,7 +1444,58 @@ aside nav.service_content li a {
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 110px;
-    padding-left: 84px;;
+    padding-left: 84px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.prod .param_bl:before {
+        background: url(/images/before.png);
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    width: 101%;
+    height: 193px;
+    left: 0;
+    z-index: -1;;
+    
+
+}
+.repeat {
+    padding-left: 69px;
+    margin-left: -70px;
+    background-image: url(/images/middle.png);
+    background-position: 0% 100%;
+    width: 201px;
+    background-size: 100% 100%;
+    margin-top: 44px;;
+
+}
+.repeat_2 {
+    margin-left: -49px;
+    padding-left: 49px;
+
+}
+.repeat .im_1{
+    margin-left: -49px;
+    float: left;
+
+}
+.repeat_2 .im_2 {
+    margin-left: -62px;
+    float: left;
+}
+
+.prod .param_bl:after {
+    background: url(/images/after.png);
+    content: "";
+    left: 1px;
+    height: 200px;
+    width: 101%;
+    background-repeat: no-repeat;
+    bottom: -47px;
+    position: absolute;
+
 }
 .prod .param_bl .for_h4{
     color: #343434;
@@ -1972,8 +2033,38 @@ section.conacts .right textarea {
     width: 107px;
     height: 40px;
     padding-top: 0;
-
 }
 .modal {
     display: none;
+}
+.shad_dip {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.shad_dip_2 {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    margin-left:         41px;
+    height:         186px;
+}
+.pagination li a:hover {
+    color:#fff;
+    background: #6EC1EF;
+}
+.shad_img {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    margin-right:         50px;
+}
+.shad_img:last-child {
+    margin-right: 0px;
 }
