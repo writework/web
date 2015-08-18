@@ -1,11 +1,11 @@
 @font-face {
     font-family: Sreda;
-    src: url(/fonts/Sreda.ttf);
+    src: url(../fonts/Sreda.ttf);
    }
   @font-face {
   font-family: 'myriadpro';
   src: url('myriad_pro-webfont.eot');
-  src: local('☺'), url('/fonts/myriad_pro-webfont.woff') format('woff'), url('/fonts/myriad_pro-webfont.ttf') format('truetype'), url('/fonts/myriad_pro-webfont.svg') format('svg');
+  src: local('☺'), url('../fonts/myriad_pro-webfont.woff') format('woff'), url('../fonts/myriad_pro-webfont.ttf') format('truetype'), url('/fonts/myriad_pro-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +18,7 @@ header {
     background-color:#fff;
 
     background-repeat: no-repeat;;
-    background-image:url(/images/back_1.png);;
+    background-image:url(../images/back_1.png);;
 
     padding-bottom: 138px;
     background-position-x: 51%;
@@ -65,7 +65,12 @@ header a.phone{
     margin-top: -144px;
     margin-right: 50px;
     display: block;
-    background-image: url(/images/phone.png); 
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    background-image: url(../images/phone.png); 
 }
 header a.trans_phone {
     height: 42px;
@@ -73,25 +78,37 @@ header a.trans_phone {
     margin-right: 50px;
     font-size: 24px;
     font-family: sreda;
-    background-image: url(/images/trans_phone.png);
+    background-image: url(../images/trans_phone.png);
     float: right;
     color: #fff;
+     -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
     text-decoration: none;
-    display: block;
+    visibility: hidden;
+    opacity: 0;
     text-align: center;
     padding-top: 19px;
     background-repeat: no-repeat;
     margin-top: -144px;
 }
-header a.trans_phone_180 {
+/* header a.trans_phone_180 {
     transform: rotateY(90deg);
 }
 .transform_phone {
     transform: rotateY(90deg);
-}
-header a.phone:hover {
-
-}
+} */
+    .phone:hover{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+    }
+    .phone:hover + .trans_phone{
+        visibility: visible;
+        opacity: 1;
+        margin-right: 130px;
+    }
 header article {
     width: 50%;
     margin: 118px auto;
@@ -254,7 +271,7 @@ header a.click {
     
 }
 .two {
-    background-image: url(/images/back_2.png);
+    background-image: url(../images/back_2.png);
     margin-top: -66px;
     background-repeat: no-repeat;
     height: 624px;
@@ -310,7 +327,7 @@ header a.click {
 
 }
 .two .back {
-    background: url(/images/bord_back_2.png);
+    background: url(../images/bord_back_2.png);
     width: 100%;
     background-position: center center;
     margin-top: 105px;
@@ -326,7 +343,7 @@ header a.click {
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-position-x: center;
-    background-image: url(/images/back_3.png);
+    background-image: url(../images/back_3.png);
 
 }
 .three .left {
@@ -374,7 +391,7 @@ header a.click {
 
 }
 .three .left .group {
-    background-image: url(/images/group_3.png);
+    background-image: url(../images/group_3.png);
     background-repeat: no-repeat;
     width: 503px;
     height: 165px;
@@ -411,7 +428,7 @@ header a.click {
     font-weight: 600;
     line-height: 1.4;
     margin-right: 52px;
-    background-image: url(/images/diplom_icon.png);
+    background-image: url(../images/diplom_icon.png);
     background-repeat: no-repeat;
     background-position: center top;
     padding-top: 81px;
@@ -432,8 +449,8 @@ header a.click {
     text-align: center;
     margin-left: auto;
     width: 814px;
-    margin-right: auto;;
-
+    margin-right: auto;
+    font-family: sreda;
 }
 .four h2.about {
     text-transform: none;
@@ -465,7 +482,7 @@ header a.click {
 
 }
 body.about {
-    background-image: url(/images/back_about.png);
+    background-image: url(../images/back_about.png);
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -486,7 +503,7 @@ body.about {
 }
 .four ul li a:active {
     color:#000;
-    background: url(/images/flag.png);
+    background: url(../images/flag.png);
     background-repeat: no-repeat;
     background-position-x: center;
     text-decoration: none;
@@ -508,20 +525,32 @@ body.about {
     margin-right: 20px;
     margin-left: 20px;
 }
-.four .all article:hover h2 {
+.four .all article:hover h2,
+.four .scroll-content-item:hover h2 {
     color: #00C0FF;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
-.four .all article:hover img {
+.four .all article:hover img,
+.four .scroll-content-item:hover img{
     margin-bottom: 10px;
     margin-top: -10px;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
-.four .all article img{
+.four .all article img,
+.four .scroll-content-item img{
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
-.four .all article h2{
-        transition: all .5s ease-in-out;
+.four .all article h2,
+.four .scroll-content-item h2{
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     text-transform: none;
     font-size: 22px;
     color: #3c3c3c;
@@ -532,22 +561,26 @@ body.about {
     vertical-align: top;
     padding-bottom: 20px;
 }
-.four  article h2:before {
+.four  article h2:before,
+.four .scroll-content-item h2:before {
      font-size: 22px;
       content: '';
 }
-.four   article h2:after {
+.four   article h2:after,
+.four .scroll-content-item h2:after  {
      font-size: 22px;
      content: '';
 }
-.four .all article p{
+.four .all article p,
+.four .scroll-content-item p {
     font-size: 16px;
     font-family: 'myriadpro';
     color: #3c3c3c;
-    line-height: 1.3;;
-    
+    line-height: 1.3;
+    font-weight: normal;
 }
-.four .all article p span{
+.four .all article p span,
+.four .scroll-content-item p span{
     font-weight: 600;
 }
 .four  .h2 {
@@ -572,7 +605,7 @@ body.about {
     height: 601px;
     margin-top: 32px;
     padding-top: 77px;
-    background-image: url(/images/back_5.png);
+    background-image: url(../images/back_5.png);
 
 }
 .five h2 {
@@ -612,18 +645,17 @@ body.about {
     margin-top: 129px;
     margin-left: 49px;
     float: left;
-    background: url(/images/prev.png);
+    background: url(../images/prev.png);
     transition: background .5s ease-in-out;
 
 }
 
 .prev:hover {
-    background: url(/images/prev_blue.png);
+    background: url(../images/prev_blue.png);
     transition: all .5s ease-in-out;
 }
 .rewiews {
     background-color: #fff;
-    margin: 60px auto;
     height: auto;
     padding-bottom: 40px;
     padding-top: 35px;
@@ -632,11 +664,12 @@ body.about {
     -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
     position: relative;
+    margin: 60px auto;
 }
 .rewiews:after{
-    background: url(/images/trenagle.png);
+    background: url(../images/trenagle.png);
     content: "";
-    left: 50%;
+    left: 48.1%;
     height: 25px;
     width: 40px;
     background-repeat: no-repeat;
@@ -686,20 +719,20 @@ body.about {
     text-decoration: none;
     color: #fff;
     text-align: center;
-    margin-top: -240px;
     margin-right: 51px;
-    background: url(/images/next.png);
+    background: url(../images/next.png);
     transition: background .5s ease-in-out;
+    margin-top: -240px;
 
 }
 .next:hover {
-    background: url(/images/next_blue.png);
+    background: url(../images/next_blue.png);
     transition: all .5s ease-in-out;
 }
 .rewiews_btn {;
     width: 218px;
     height: 66px;
-    background-image: url(/images/btn_rew.png);
+    background-image: url(../images/btn_rew.png);
     background-color: rgba(0, 123, 191, 0);
     border: none;
     color: #fff;
@@ -714,13 +747,13 @@ body.about {
        display: block;
 
 }.rewiews_btn:hover {
-    background-image: url(/images/back_rew_hov.png);
+    background-image: url(../images/back_rew_hov.png);
     transition: all .5s ease-in-out;
 }
 .rewiews_btn_a {
     width: 218px;
     height: 44px;
-    background-image: url(/images/btn_rew.png);
+    background-image: url(../images/btn_rew.png);
     background-color: rgba(0, 123, 191, 0);
     border: none;
     color: #fff;
@@ -731,13 +764,13 @@ body.about {
     transition: all .5s ease-in-out;
     text-align: center;
     text-decoration: none;
-    margin: -27px auto;
     display: block;
     padding-top: 21px;
+    margin: -27px auto;
 
 }
 .rewiews_btn_a:hover {
-    background-image: url(/images/back_rew_hov.png);
+    background-image: url(../images/back_rew_hov.png);
     transition: all .5s ease-in-out;
 }
 .telephone  a {
@@ -749,7 +782,7 @@ footer {
      background-position: top center;
      height: 180px;
      padding-top: 57px;
-     background-image: url(/images/back_footer.png);
+     background-image: url(../images/back_footer.png);
      width: 100%;
 
 
@@ -825,7 +858,7 @@ footer div.adress p {
 
 }
 header.service {
-    background: url(/images/back_head_service.png);
+    background: url(../images/back_head_service.png);
     background-repeat: no-repeat;
     background-position: center 233%;
     padding-bottom: 89px;
@@ -837,7 +870,9 @@ header nav.service  li {
 }
 nav.service li a {
     color: #fff;
-    transition: all .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
     padding: 19px 20px 37px 20px;
     border: none;
     text-decoration: underline;
@@ -845,7 +880,9 @@ nav.service li a {
 
 nav.service li a:hover {
     color: #76FAFF;
-    transition: all .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
     text-decoration: none;
 }
 nav.service li a.pad:active {
@@ -871,7 +908,7 @@ header.service nav {
 
 }
 header.service a.phone{
-    background-image: url(/images/phone_service.png);
+    background-image: url(../images/phone_service.png);
     height: 60px;
     width: 60px;
     float: right;
@@ -885,7 +922,7 @@ aside {
 
 }
 aside nav.service_content {
-    background-image: url(/images/aside.png);
+    background-image: url(../images/aside.png);
     background-repeat: no-repeat;
     height: 417px;
     width: 192px;
@@ -1084,33 +1121,29 @@ aside nav.service_content li a {
 }
 .gallery_about .gallery div{
     width: 300px;
+    height: 201px;
+    overflow:hidden;
     display: inline-block;
-    transition: all .2s ease-in-out;
     vertical-align: middle;
-    padding:15px;
     padding-left:0;
     padding-right:0;
 }
-
-.gallery_about .gallery  div :hover  {
-    width: 330px;
-    transition: all .2s ease-in-out;
-}
-.gallery_about .gallery div :hover {
-     padding: 0px;
-    
-    position: relative;
-    
-}
-.gallery_about .gallery {
-
-}
+    .gallery_about .gallery div img{
+        -webkit-transition: all .5s ease-in-out;
+           -moz-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+    }
+        .gallery_about .gallery div img:hover{
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+        }
 .four.about_bottom article .left {
     display: inline-block;
     width: 50%;
     vertical-align: top;
     color: #343434;
-
 }
 .four.about_bottom article .left h3 {
     padding-left: 76px;
@@ -1134,7 +1167,7 @@ aside nav.service_content li a {
 
 }
 .four.about_bottom {
-    background: url(/images/back_about_2.png);
+    background: url(../images/back_about_2.png);
     background-repeat: no-repeat;
     background-position: 78.5% 20%;
 }
@@ -1157,7 +1190,7 @@ aside nav.service_content li a {
     font-weight: 600;
     line-height: 1.4;
     margin-right: 52px;
-    background-image: url(/images/diplom_icon.png);
+    background-image: url(../images/diplom_icon.png);
     background-repeat: no-repeat;
     background-position: center top;
     padding-top: 81px;
@@ -1309,7 +1342,7 @@ aside nav.service_content li a {
     padding-bottom: 0;
  }
  .rewiews_all_body {
-    background-image: url(/images/back_rew.png);
+    background-image: url(../images/back_rew.png);
     background-position: center center;
 
 }
@@ -1449,7 +1482,7 @@ aside nav.service_content li a {
     padding-bottom: 10px;
 }
 .prod .param_bl:before {
-        background: url(/images/before.png);
+        background: url(../images/before.png);
     content: "";
     background-repeat: no-repeat;
     position: absolute;
@@ -1464,7 +1497,7 @@ aside nav.service_content li a {
 .repeat {
     padding-left: 69px;
     margin-left: -70px;
-    background-image: url(/images/middle.png);
+    background-image: url(../images/middle.png);
     background-position: 0% 100%;
     width: 201px;
     background-size: 100% 100%;
@@ -1487,7 +1520,7 @@ aside nav.service_content li a {
     float: left;
 }
 .prod .param_bl:after {
-    background: url(/images/after.png);
+    background: url(../images/after.png);
     content: "";
     left: 1px;
     height: 200px;
@@ -1791,9 +1824,8 @@ aside nav.service_content li a {
 
 }
 body.diploms_body {
-    background-image: url(/images/back_diplom.png);
-    background-repeat: no-repeat;
-    background-position: center 29%;
+   background: url(../images/diplom-wrap.jpg)no-repeat 50%;
+   background-size: cover;
 
 }
 .content_slider {
@@ -1819,7 +1851,7 @@ section.conacts {
 
 }
 section.conacts .left {
-    background-image: url(/images/back_address.png);
+    background-image: url(../images/back_address.png);
     display: inline-block;
     background-repeat: no-repeat;
     height: 401px;
@@ -1943,7 +1975,7 @@ section.conacts .right textarea {
     font-size: 12px;
     padding-bottom: 0px;
     margin-left: 0;
-    background-image: url(/images/btn_con.png);
+    background-image: url(../images/btn_con.png);
     width: 107px;
     height: 40px;
     padding-top: 0;
@@ -1955,7 +1987,7 @@ section.conacts .right textarea {
 }
 .three .right a.hov_img_effect {
     transition: all .3s ease-in-out;
-    background-image: url(/images/diplom_icon_hov.png);
+    background-image: url(../images/diplom_icon_hov.png);
     color:#4ABCFC;
     text-decoration: none;
    }
@@ -2030,7 +2062,7 @@ section.conacts .right textarea {
     font-size: 12px;
     padding-bottom: 0px;
     margin-left: 0;
-    background-image: url(/images/btn_con.png);
+    background-image: url(../images/btn_con.png);
     width: 107px;
     height: 40px;
     padding-top: 0;
@@ -2044,7 +2076,7 @@ section.conacts .right textarea {
     -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    background-image:         url(/images/rama.png);
+    background-image:         url(../images/rama.png);
     background-repeat:         no-repeat;
     height:         409px;
     width:         301px;
@@ -2065,19 +2097,185 @@ section.conacts .right textarea {
     background: #6EC1EF;
 }
 .shad_img {
-    display: inline-block;
+    display: block;
     vertical-align: top;
     -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     margin-right:         50px;
-    background-image:         url(/images/rama.png);
+    background-image:         url(../images/rama.png);
     background-repeat:         no-repeat;
     padding:         32px 0px 0px 32px;
     box-sizing:         border-box;
     height:         409px;
     width:         301px;
 }
-.shad_img:last-child {
-    margin-right: 0px;
+.film_roll_pager{
+    display: none;
 }
+
+header.service a.trans_phone{
+   
+    margin-top: -75px;
+}
+
+.film_roll_child{
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.film_roll_child.active{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+    .film_roll_child.active:hover,
+    .opacity:hover,
+    .film_roll_child.active + div:hover{
+        transform: translate(0,-20px);
+        -webkit-transform: translate(0,-20px);
+        -o-transform: translate(0,-20px);
+        -moz-transform: translate(0,-20px);
+    }
+.film_roll_child.active + div{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.opacity{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.control-container{
+    position: absolute;
+    width: 1280px !important;
+    margin-top: -25px;
+    z-index: 10;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    margin-left: -640px;
+}
+.film_roll_prev, .film_roll_next{
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+}
+.film_roll_prev{
+    background: url(../images/prev_blue.png)no-repeat;
+    left:0;
+}
+.film_roll_next{
+    background: url(../images/next_blue.png)no-repeat;
+    right: 0;
+}
+
+.film_roll_wrapper{
+    padding-top: 30px !important;
+}
+
+
+.scroll-pane { overflow: auto; width: 100%; }
+.scroll-content { width: 3780px; float: left; }
+.scroll-content-item { width: 295px; float: left; text-align: center; padding-left: 10px;padding-right: 10px;}
+.scroll-bar-wrap { clear: left; padding: 0 4px 0 2px; margin: 0 -1px -1px -1px;}
+.scroll-bar-wrap .ui-slider { background: none; border:0; height: 2em; margin: 0 auto;  }
+.scroll-bar-wrap .ui-handle-helper-parent { position: relative; width: 462px; height: 6px; margin: 0 auto; margin-top: 25px;background: url(../images/liner.png)no-repeat; }
+.scroll-bar-wrap .ui-slider-handle { top:-8px; height: 24px; background: url(../images/range.png)no-repeat;margin-left: -2.5em; border:0 !important;outline: 0 !important }
+.scroll-bar-wrap .ui-slider-handle .ui-icon { margin: -8px auto 0; position: relative; top: 50%; }
+
+.scroll-bar-wrap .ui-slider-handle:hover,
+.scroll-bar-wrap .ui-slider-handle:active{
+    background: url(../images/range-h.png)no-repeat;
+}
+.slider {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    width: 100%;
+}
+    
+    .slides {
+        height: 100%;
+        
+        /* Simple clear fix */
+        overflow: hidden;
+        
+        /** 
+         * Prevent blinking issue
+         * Not tested. Experimental.
+         */
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+
+        /**
+         * Here is CSS transitions 
+         * responsible for slider animation in modern broswers
+         */
+        -webkit-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+           -moz-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+            -ms-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+             -o-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+                transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    }
+    
+        .slide {
+            clear: none;
+            float: left;
+            height: 100%;
+        }
+
+
+    .slider-arrows {}
+
+        .slider-arrow {
+    position: absolute;
+    display: block;
+    margin-bottom: -20px;
+    padding: 20px;
+        }
+
+            .slider-arrow--right {
+    right: 30px; }
+            .slider-arrow--left {
+    left: 30px;
+    top: 12%; }
+
+
+    .slider-nav {
+        position: absolute;
+        bottom: 30px;
+    }
+
+        .slider-nav__item {
+            width: 12px;
+            height: 12px;
+            float: left;
+            clear: none;
+            display: block;
+            margin: 0 5px;
+            background: #fff;
+            display: none;
+        }
+
+                .slider-nav__item:hover { background: #ccc; }
+                .slider-nav__item--current { background: #ccc; }

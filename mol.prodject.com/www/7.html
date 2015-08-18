@@ -5,7 +5,8 @@
    <meta charset="utf-8">
  
   <title>Молочная продукция</title>
-     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body class="diploms_body">
@@ -37,24 +38,55 @@
       </div>
     </section>
     <section class="diploms">
-      <div class="container">
-        <a href="" class="prev">
-        <img src="images/prev_blue.png" alt=""></a>
-        <div class="content_slider">
-        <div class="shad_img"> 
-          <img src="/images/dip_1.png" alt="">
-        </div>
-        <div class="shad_img"> 
-         <img src="/images/dip_2.png" alt="">
-        </div>
-        <div class="shad_img"> 
-          <img src="/images/dip_3.png" alt="">
-        </div>
-      
-        </div>
-        <a href="" class="next">
-        <img src="images/next_blue.png" alt=""></a>
-      </div>
+      <div id="film_roll">
+
+         <div>
+           <div class="shad_img">
+            <a href="images/dip_1.png" class="fancybox"><img src="images/dip_1.png" alt=""></a> 
+           </div>
+         </div>
+         <div>
+           <div class="shad_img"> 
+               <a href="images/dip_2.png" class="fancybox"><img src="images/dip_2.png" alt=""></a> 
+           </div>
+         </div>
+         <div>
+            <div class="shad_img"> 
+               <a href="images/dip_2.png" class="fancybox"><img src="images/dip_2.png" alt=""></a> 
+           </div>
+         </div>
+         <div>
+           <div class="shad_img"> 
+               <a href="images/dip_1.png" class="fancybox"><img src="images/dip_1.png" alt=""></a> 
+           </div>
+         </div>
+         <div>
+           <div class="shad_img"> 
+               <a href="images/dip_2.png" class="fancybox"><img src="images/dip_2.png" alt=""></a> 
+           </div>
+         </div>
+         <div>
+            <div class="shad_img"> 
+               <a href="images/dip_3.png" class="fancybox"><img src="images/dip_3.png" alt=""></a> 
+           </div>
+         </div>
+         <div>
+           <div class="shad_img"> 
+               <a href="images/dip_1.png" class="fancybox"><img src="images/dip_1.png" alt=""></a> 
+           </div>
+         </div>
+         <div>
+           <div class="shad_img"> 
+              <a href="images/dip_2.png" class="fancybox"><img src="images/dip_2.png" alt=""></a> 
+           </div>
+         </div>
+         <div>
+            <div class="shad_img"> 
+               <a href="images/dip_3.png" class="fancybox"><img src="images/dip_3.png" alt=""></a> 
+           </div>
+         </div>
+    </div>
+
     </section>
   <footer>
     <div class="container">
@@ -82,6 +114,28 @@
       </div>
     </div>
   </footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
+<script src="js/jquery.film_roll.js"></script>
+<script>
+   jQuery(function() {
+    var film_roll = new FilmRoll({
+        container: '#film_roll',
+        scroll: false,
+      });
+  });
+
+   $(document).ready(function() {
+      $('.film_roll_child').data('data-film-roll-child-id', '0').addClass('opacity')
+   });
+</script>
+   
 </body>
 </html>
 

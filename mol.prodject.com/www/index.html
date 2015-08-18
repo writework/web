@@ -2,25 +2,28 @@
 
 <html>
 <head>
-   <meta charset="utf-8">
- 
+  <meta charset="utf-8">
   <title>Молочная продукция</title>
-     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="/js/scripts.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/range.js"></script>
+  <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $(".fancybox").fancybox();
-  });
-</script>
+  <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript" src="js/jquery.glide.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
 </head>
 <body>
   <header>
     <div class="container">
-      <nav>
+      <nav class="main-nav">
         <ul>
           <li><a class="hov_a" href="">о нас</a></li>
           <li><a class="hov_a" href="">наша продукция</a></li>
@@ -30,9 +33,9 @@
         </ul>
       </nav>
       <a href="" class="phone"></a>
-   <!--    <a href="" class="trans_phone">
+      <a href="" class="trans_phone">
         +7 391 258-11-12
-      </a> -->
+      </a>  
       
       <article>
         <h1>молочная продукция</h1>
@@ -167,24 +170,26 @@
     </div>
   </section>
   <section class="four">
-    <div class="container">
-      <h2>наша продукция</h2>
-      <p>
-      <input type="range">
-      </p>
-      <ul>
-        <li><a href="">молоко</a></li>
-        <li><a href="">кефир</a></li>
-        <li><a href="">сметана</a></li>
-        <li><a href="">сливки</a></li>
-        <li><a href="">творог</a></li>
-        <li><a href="">масло</a></li>
-        <li><a href="">сыр</a></li>
-        <li><a href="">напитки</a></li>
-      </ul>
-      <div class="all">
-        <article>
-          <div class="img_big">
+      <div class="container">
+         <h2>наша продукция</h2>
+      </div>
+      <div class="scroll-pane ui-widget ui-widget-header ui-corner-all">
+         <div class="scroll-bar-wrap ui-widget-content ui-corner-bottom">
+            <div class="scroll-bar"></div>
+        </div>
+        <ul>
+           <li><a href="">молоко</a></li>
+           <li><a href="">кефир</a></li>
+           <li><a href="">сметана</a></li>
+           <li><a href="">сливки</a></li>
+           <li><a href="">творог</a></li>
+           <li><a href="">масло</a></li>
+           <li><a href="">сыр</a></li>
+           <li><a href="">напитки</a></li>
+         </ul>
+        <div class="scroll-content">
+          <div class="scroll-content-item ui-widget-header">
+            <div class="img_big">
             <div class="img">
               <img src="images/carusel_1.png" alt="">
             </div>
@@ -196,9 +201,9 @@
               <p>Мaсса: <span>200г</span></p>
             </div>
           </div>
-        </article>
-         <article>
-          <div class="img_big">
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+             <div class="img_big">
             <div class="img">
               <img src="images/carusel_2.png" alt="">
             </div>
@@ -211,9 +216,9 @@
               <p>Мaсса: <span>200г</span></p>
             </div>
           </div>
-        </article>
-         <article>
-          <div class="img_big">
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+             <div class="img_big">
             <div class="img">
               <img src="images/carusel_3.png" alt="">
             </div>
@@ -226,9 +231,9 @@
               <p>Мaсса: <span>500г</span></p>
             </div>
           </div>
-        </article>
-         <article>
-          <div class="img_big">
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+              <div class="img_big">
             <div class="img">
               <img src="images/carusel_4.png" alt="">
             </div>
@@ -240,32 +245,195 @@
               <p>Мaсса: <span>500г</span></p>
             </div>
           </div>
-        </article>
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+            <div class="img_big">
+            <div class="img">
+              <img src="images/carusel_1.png" alt="">
+            </div>
+          </div>
+          <div class="h2">
+            <h2>Йогуртный напиток</h2>
+            <div class="p">
+              <p>Жирность: <span>4,0%</span></p>
+              <p>Мaсса: <span>200г</span></p>
+            </div>
+          </div>
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+             <div class="img_big">
+            <div class="img">
+              <img src="images/carusel_2.png" alt="">
+            </div>
+          </div>
+          <div class="h2">
+            <h2>йогуртный напиток
+            с ванилином</h2>
+            <div class="p">
+              <p>Жирность: <span>3,2%</span></p>
+              <p>Мaсса: <span>200г</span></p>
+            </div>
+          </div>
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+             <div class="img_big">
+            <div class="img">
+              <img src="images/carusel_3.png" alt="">
+            </div>
+          </div>
+          <div class="h2">
+            <h2>АЦИДОфИЛЬНЫЙ
+            напиток</h2>
+            <div class="p">
+              <p>Жирность: <span>2,5%</span></p>
+              <p>Мaсса: <span>500г</span></p>
+            </div>
+          </div>
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+              <div class="img_big">
+            <div class="img">
+              <img src="images/carusel_4.png" alt="">
+            </div>
+          </div>
+          <div class="h2">
+            <h2>Ряженка</h2>
+            <div class="p">
+              <p>Жирность: <span>4%</span></p>
+              <p>Мaсса: <span>500г</span></p>
+            </div>
+          </div>
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+            <div class="img_big">
+            <div class="img">
+              <img src="images/carusel_1.png" alt="">
+            </div>
+          </div>
+          <div class="h2">
+            <h2>Йогуртный напиток</h2>
+            <div class="p">
+              <p>Жирность: <span>4,0%</span></p>
+              <p>Мaсса: <span>200г</span></p>
+            </div>
+          </div>
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+             <div class="img_big">
+            <div class="img">
+              <img src="images/carusel_2.png" alt="">
+            </div>
+          </div>
+          <div class="h2">
+            <h2>йогуртный напиток
+            с ванилином</h2>
+            <div class="p">
+              <p>Жирность: <span>3,2%</span></p>
+              <p>Мaсса: <span>200г</span></p>
+            </div>
+          </div>
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+             <div class="img_big">
+            <div class="img">
+              <img src="images/carusel_3.png" alt="">
+            </div>
+          </div>
+          <div class="h2">
+            <h2>АЦИДОфИЛЬНЫЙ
+            напиток</h2>
+            <div class="p">
+              <p>Жирность: <span>2,5%</span></p>
+              <p>Мaсса: <span>500г</span></p>
+            </div>
+          </div>
+          </div>
+          <div class="scroll-content-item ui-widget-header">
+              <div class="img_big">
+            <div class="img">
+              <img src="images/carusel_4.png" alt="">
+            </div>
+          </div>
+          <div class="h2">
+            <h2>Ряженка</h2>
+            <div class="p">
+              <p>Жирность: <span>4%</span></p>
+              <p>Мaсса: <span>500г</span></p>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
   <section class="five">
     <div class="container">
       <h2>Отзывы о продукции</h2>
       <div class="rewiews_all">
-        <a href="" class="prev">
-          
-           </a>
-        <div class="rewiews">
-          <div class="name">
-            Иванова Александра, 25 января 2015 г.
-          </div>
+         <div class="slider">
+      <ul class="slides">
+        <li class="slide">
+          <div class="rewiews">
+            <div class="name">
+             Иванова Александра, 25 января 2015 г.
+            </div>
           <div class="border"></div>
           <h3>Очень вкусное молоко!</h3>
           <p>Привет всем. Хочу рассказать вам о молоке "Никольское". В наше время производители все чаще
           халтурят в производстве продуктов питания, в том числе и молока. И чтобы найти хорошее, нужно
           перепробовать массу не очень хорошего. Нам повезло, мы почти сразу нашли "своего" производителя.
-          И уже несколько лет практически ежедневно покупаем молоко этой марки. Молоко очень вкусное,
+          И уже несколько лет практически ежедневно покупаем молоко этой марки.
+          Молоко очень вкусное,
           всегда свежее...</p>
-        </div>
-        <a href="" class="next">
-        </a>
-      </div>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="rewiews">
+            <div class="name">
+             Иванова Александра, 25 января 2015 г.
+            </div>
+          <div class="border"></div>
+          <h3>Очень вкусное молоко!</h3>
+          <p>Привет всем. Хочу рассказать вам о молоке "Никольское". В наше время производители все чаще
+          халтурят в производстве продуктов питания, в том числе и молока. И чтобы найти хорошее, нужно
+          перепробовать массу не очень хорошего. Нам повезло, мы почти сразу нашли "своего" производителя.
+          И уже несколько лет практически ежедневно покупаем молоко этой марки.
+          Молоко очень вкусное,
+          всегда свежее...</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="rewiews">
+            <div class="name">
+             Иванова Александра, 25 января 2015 г.
+            </div>
+          <div class="border"></div>
+          <h3>Очень вкусное молоко!</h3>
+          <p>Привет всем. Хочу рассказать вам о молоке "Никольское". В наше время производители все чаще
+          халтурят в производстве продуктов питания, в том числе и молока. И чтобы найти хорошее, нужно
+          перепробовать массу не очень хорошего. Нам повезло, мы почти сразу нашли "своего" производителя.
+          И уже несколько лет практически ежедневно покупаем молоко этой марки.
+          Молоко очень вкусное,
+          всегда свежее...</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+      var glide = $('.slider').glide().data('api_glide');
+
+        $(window).on('keyup', function (key) {
+          if (key.keyCode === 13) {
+            glide.jump(3, console.log('Wooo!'));
+          };
+        });
+
+        $('.slider-arrow').on('click', function() {
+          console.log(glide.current());
+        });
+    </script>
+      
       <a href="#popup"class="rewiews_btn_a fancybox" >Оставить отзыв</a>
       <div class="modal" id="popup">
           <form action="" method="POST">
